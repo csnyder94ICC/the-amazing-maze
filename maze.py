@@ -2,25 +2,25 @@ import pickle
 
 # Define scenarios I would recommend using dictionaries. Samantha, Do you want to do the dialogue for the rooms and choices? Keep room names the same though.
 rooms = {
-    'start': {
-        'description': 
-        'choices': 
+    'start': { 
+        'description': Welcome to the Amazing Maze! Your goal is to find the hidden treasure and get out before time runs out.
+        'choices': Enter the maze.
     },
-    'room1': {
+    'room1': { 
         'description': 
-        'choices': 
+        'choices': left, straight, right, back
     },
     'room2': {
         'description': 
-        'choices': 
+        'choices': left, right, back
     },
     'treasure_room': {
         'description': 
-        'choices': 
+        'choices': take some treasure, go back, leave the treasure room
     },
     'exit': {
-        'description': 
-        'choices': 
+        'description': It seems you've made it out with the treasure. Congratulations!
+        'choices': Exit game. 
     }
 }
 
