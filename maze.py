@@ -1,6 +1,6 @@
 import pickle
 
-# Define scenarios I would recommend using dictionaries. Samantha, Do you want to do the dialogue for the rooms and choices? Keep room names the same though.
+# Define scenarios I would recommend using dictionaries. Samantha, Do you want to do the dialogue for the rooms and choices? Keep room names the same though. 
 rooms = {
     'start': {
         'description': 'Welcome to the Amazing Maze! The goal is to find the treasure and escape before it is too late...do you wish to enter?',
@@ -8,7 +8,7 @@ rooms = {
     },
     'room1': {
         'description': 'You stumble into a room and on the wall is written a riddle. I am an odd number. Take away a letter and I become even. What number am I? Each door has an answer. On the left door it says 23. On the middle door it says 7. And the right door says 1. Choose wisely.',
-        'choices': ['Go through the left door.', 'Go through the middle door.' 'Go through the right door.', 'Go back.']
+        'choices': ['Go through the left door.', 'Go through the middle door.', 'Go through the right door.', 'Go back.']
     },
     'room2': {
         'description': 'Ahh. You have chosen incorrectly. I guess we will take the long way. Decide which way you should go.',
@@ -24,7 +24,11 @@ rooms = {
     }
 }
 
-#Game initialization below (Reference material: https://codereview.stackexchange.com/questions/159818/save-and-load-the-state-of-a-role-playing-game-using-pickle)
+#Game initialization below (Reference material: https://codereview.stackexchange.com/questions/159818/save-and-load-the-state-of-a-role-playing-game-using-pickle) 
+
+# Initialize game state
+current_room = 'start'
+game_over = False
 
 #Function to save the game state to a file
 def save_game_state(game_state):
@@ -89,8 +93,13 @@ while not game_over:
                 if choice == 'Exit game':
                     game_over = True
     else:
-        print("Invalid input. Please enter a valid choice number.")
+            print("Invalid choice number. Please choose a valid option.")
+else:
+    print("Invalid input. Please enter a valid choice number.")
+    print("What you expected to happen didn't happen.")
+        
+#Saves the game before exiting
+save_game_state(current_room)
 
 
-# The only thing really left is saving the game state if someone wants to handle that.
-# I will debug once the code is completed and Samantha inputs her parts.
+
