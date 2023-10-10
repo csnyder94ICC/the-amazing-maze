@@ -4,7 +4,7 @@
 
 ## Description
 
-In this Python-based maze game project, we use lists to store rooms and scenarios, allowing players to explore and make choices. Our game incorporates decision structures to handle player choices, repetition structures to keep the game running until the player decides to exit or reaches an end condition, and it even includes functionality to save and load game states using file operations. Embark on an exciting journey through intricate mazes, make crucial decisions, and challenge your problem-solving skills in this interactive gaming experience!
+In this Python-based maze game project, we use dictionaries to store rooms and scenarios, allowing players to explore and make choices. Our game incorporates decision structures to handle player choices, and repetition structures to keep the game running until the player decides to exit or reaches an end condition, and it even includes functionality to save and load game states using file operations. Embark on an exciting journey through intricate mazes, make crucial decisions, and challenge your problem-solving skills in this interactive gaming experience!
 
 ## Table of Contents:
 * [Description](#description)
@@ -30,6 +30,6 @@ If you have any issues, feel free to email one of the group members.  Our email 
 ## Credits
 
 This project was a collaboration between fellow classmates: Joshua Carroll, Samantha Ruppe, and Christopher Snyder.  
-Reference material for using Pickle: https://codereview.stackexchange.com/questions/159818/save-and-load-the-state-of-a-role-playing-game-using-pickle
+Reference material for using Pickle: https://codereview.stackexchange.com/questions/159818/save-and-load-the-state-of-a-role-playing-game-using-pickle,https://www.w3schools.com/python/default.asp,https://www.geeksforgeeks.org/how-to-use-pickle-to-save-and-load-variables-in-python/
 
 
